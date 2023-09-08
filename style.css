@@ -1,0 +1,343 @@
+/* Standard Calculator */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+.container-box {
+    box-shadow: 1px 3px 8px 3px #696969;
+    background: #ccc;
+    border-radius: 5px;
+    width: 35%;
+    height: 70%;
+    padding: 15px;  
+    position: absolute;
+    top: 23%;
+    right: 32.65%;
+}
+
+.text {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 25px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 11px 26px;
+    background: blue;
+    margin: 15px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: rgb(32, 32, 216);
+}
+
+.standard form input {
+    border: 0;
+    outline: 0;
+    width: 74px;
+    height: 52px;
+    border-radius: 8px;
+    background: #2e69e7;
+    font-size: 20px;
+    color: #ffff;
+    cursor: pointer;
+    margin: 5px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    height: 12vh;
+    font-size: 40px;
+    box-shadow: 5px 5px 5px #999 inset;
+    background: #888;
+}
+
+.row-two input:nth-child(1),
+.row-two input:nth-child(2),
+.row-two input:nth-child(3),    
+.row-three input:nth-child(1),
+.row-three input:nth-child(2),
+.row-three input:nth-child(3),
+.row-four input:nth-child(1),
+.row-four input:nth-child(2),
+.row-four input:nth-child(3),
+.row-five input:nth-child(2) {
+    background: #777;
+}
+
+.row-five input:nth-child(4) {
+    background: #069106;
+    width: 160px;
+}
+
+.row-one input:hover,
+.row-two input:nth-child(4):hover,
+.row-two input:nth-child(5):hover,
+.row-three input:nth-child(4):hover,
+.row-three input:nth-child(5):hover,
+.row-four input:nth-child(4):hover,
+.row-four input:nth-child(5):hover,
+.row-five input:nth-child(1):hover,
+.row-five input:nth-child(3):hover {
+    background: #173ce0;
+}
+
+.row-five input:nth-child(4):hover {
+    background: #0a700a;
+}
+
+.row-two input:nth-child(1):hover,
+.row-two input:nth-child(2):hover,
+.row-two input:nth-child(3):hover,
+.row-three input:nth-child(1):hover,
+.row-three input:nth-child(2):hover,
+.row-three input:nth-child(3):hover,
+.row-four input:nth-child(1):hover,
+.row-four input:nth-child(2):hover,
+.row-four input:nth-child(3):hover,
+.row-five input:nth-child(2):hover {
+    background: #555;
+}
+
+/* Scientific Calculator  */
+.container {
+    width: 55%;
+    height: 65vh;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px 3px #696969;
+    position: relative;
+    left: 23%;
+    background: #ccc;
+}
+
+.container #screen {
+    width: 97%;
+    height: 75px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-left: 10px;
+    background: #888;
+    border-radius: 6px;
+}
+
+.scientific {
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scientific .row-1 button,
+.scientific .row-2 button,
+.scientific .row-3 button,
+.scientific .row-4 button,
+.scientific .row-5 button {
+    width: 102px;
+    height: 44px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px;
+    background: #2e69e7;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.row-2 button:nth-child(3),
+.row-2 button:nth-child(4),
+.row-2 button:nth-child(5),
+.row-3 button:nth-child(3),
+.row-3 button:nth-child(4),
+.row-3 button:nth-child(5),
+.row-4 button:nth-child(3),
+.row-4 button:nth-child(4),
+.row-4 button:nth-child(5),
+.row-5 button:nth-child(3) {
+    background: #777;
+}
+
+.row-2 button:nth-child(3):hover,
+.row-2 button:nth-child(4):hover,
+.row-2 button:nth-child(5):hover,
+.row-3 button:nth-child(3):hover,
+.row-3 button:nth-child(4):hover,
+.row-3 button:nth-child(5):hover,
+.row-4 button:nth-child(3):hover,
+.row-4 button:nth-child(4):hover,
+.row-4 button:nth-child(5):hover,
+.row-5 button:nth-child(3):hover {
+    background: #555;
+}
+
+.row-1 button:hover,
+.row-2 button:nth-child(1):hover,
+.row-2 button:nth-child(2):hover,
+.row-2 button:nth-child(6):hover,
+.row-3 button:nth-child(1):hover,
+.row-3 button:nth-child(2):hover,
+.row-3 button:nth-child(6):hover,
+.row-4 button:nth-child(1):hover,
+.row-4 button:nth-child(2):hover,
+.row-4 button:nth-child(6):hover,
+.row-5 button:nth-child(1):hover,
+.row-5 button:nth-child(2):hover,
+.row-5 button:nth-child(4):hover,
+.row-5 button:nth-child(6):hover {
+    background: #2f4eda;
+}   
+
+.row-5 button:nth-child(5) {
+    background: #069106;
+}
+
+.row-5 button:nth-child(5):hover {
+    background: #0a700a;
+}
+
+footer{
+    margin-top: 34rem;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+    text-align: center;
+    color: #fff;
+    background: #888;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 400px) and  (max-width: 520px) {
+    .container {
+        padding: 10px;
+        width: 75%;
+        height: 40vh;
+        margin-left: -45px;
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+    }
+
+    .container-box {
+        width: 50%;
+        height: 40vh;
+        position: relative;
+        left: 100px;
+    }
+
+    .text h1 {
+        font-size: 1.3rem;
+        position: relative;
+        top: 0;
+    }
+    
+    .buttons a {
+       padding: 7px 18px;
+       margin: 5px;
+       font-size: .7rem;
+       position: relative;
+        top: 0;
+    }
+    
+    .container #screen {
+        height: 8vh;
+        width: 93%;
+    }
+
+    form .display {
+        width: 110%;
+        height: 6vh;
+        position: relative;
+        right: 12px;
+        top: -17px;
+    }
+
+    .standard form input {
+        width: 27px;  
+        height: 4vh;
+        font-size: .4rem; 
+        border-radius: 5px;
+        margin: 2px;
+    }
+
+    form .row-five input:nth-child(4) {
+        position: relative;
+        width: 63px;
+        top: -27px;
+        left: 104px;
+    }
+    
+    .scientific .row-1 button,
+    .scientific .row-2 button,
+    .scientific .row-3 button,
+    .scientific .row-4 button,
+    .scientific .row-5 button {
+        width: 35px;
+        margin: 3px;
+        height: 4vh;
+        font-size: .8rem;
+        border-radius: 3px;
+        position: relative;
+        top: -15px;
+    }
+
+    footer {
+        margin-top: 13rem;
+        font-size: .6rem;
+    }
+
+}
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-box {
+        width: 58%;
+        padding: 10px;
+        position: relative;
+        left: 21%;
+    }
+
+    .container {
+        width: 78%;
+        padding: 10px;
+        margin-left: -105px;
+    }
+
+    .scientific .row-1 button,
+    .scientific .row-2 button,
+    .scientific .row-3 button,
+    .scientific .row-4 button,
+    .scientific .row-5 button {
+        width: 83px;
+    }
+
+    footer {
+        margin-top: 7rem;
+        font-size: 1rem;
+    }
+
+}
+  
